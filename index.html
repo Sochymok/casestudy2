@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/eacbbec1c3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    <title>Football website</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="header">
+        <div class="row pt-2 pb-2">
+            <div class="col-lg-3 d-lg-block d-md-none d-sm-none d-lg-flex justify-content-end p-2 ">
+                <a href="index.html"><img src="images/ball.png" style="width: 275px ;"></a>
+            </div>
+            <div class="col-lg-4 col-md-6  d-lg-flex justify-content-lg-start d-md-block d-sm-none">
+                <nav class="navbar navbar-dark">
+                    <form class="form-inline">
+                      <input class="form-control mr-sm-2 text-white border border-dark" id="search" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-light my-2 my-sm-0 border border-dark" id="btn_search" type="submit">Search</button>
+                    </form>
+                  </nav>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12 d-flex justify-content-lg-end justify-content-sm-center">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-link active mr-2 text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link mr-2 text-white" href="standing.html">Leagues</a>
+                        <a class="nav-link mr-2 text-white" href="#">Matches</a>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+    </div>
+    </div>
+    <div class="container" id="main">
+        <div class="row mt-4">
+            <div class="col-12" id="news_title">
+                <h4>Top News</h4>
+                <p>Editor on duty: DongAnh</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12" id="news">
+                <div class="card mb-3 ">
+                    <div class="row no-gutters">
+                      <div class="col-md-8" id="img_news">
+                        <img src="images/News.avif" style="width:100%">
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card-body">
+                          <h5 class="card-title">🤑 Transfer gossip: Liverpool's Núñez agreement, City star wants out?</h5>
+                          <p class="card-text"> Welcome to Thursday’s round-up of all of the latest transfer news, rumours and speculation. 
+                              Domestic deals Darwin Núñez’s potential move to Liverpool is gathering pace, with Portuguese newspaper Record reporting that there... </p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card" style="background-color: #000000;">
+                    <div class="border border-dark" id="img_news">
+                      <img src="images/card1.avif" class="card-img-top border" alt="...">
+                    </div>
+                    <div class="card-body pr-0 pl-0">
+                      <p class="card-text">Chelsea tell Lukaku he can leave amid Inter Milan interest</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card" style="background-color: #000000;">
+                  <div class="border border-dark" id="img_news">
+                    <img src="images/card2.avif" class="card-img-top border" alt="...">
+                  </div>
+                    <div class="card-body pr-0 pl-0">
+                      <p class="card-text">Official | Alexandre Lacazette returns to Lyon</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-3 col-md-4 d-md-block d-lg-block d-sm-none">
+                <div class="card" style="background-color: #000000;">
+                  <div class="border border-dark" id="img_news">
+                    <img src="images/card3.avif" class="card-img-top border" alt="...">
+                  </div>
+                    <div class="card-body pr-0 pl-0">
+                      <p class="card-text">Fee agreed: Liverpool & Benfica reach full agreement over €100m Darwin Nunez transfer</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-3 d-lg-block d-md-none d-sm-none ">
+                <div class="card" style="background-color: #000000;">
+                  <div class="border border-dark" id="img_news">
+                    <img src="images/card4.avif" class="card-img-top border" alt="...">
+                  </div>
+                    <div class="card-body pr-0 pl-0">
+                      <p class="card-text">Real Madrid’s 8 £50m+ signings & how they fared: Bale, Ronaldo, Kaka…</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pt-2 pb-4"  style="background-color:#2b2b2b ;">
+        <div class="container">
+            <div class="row mt-4" id="match_head">
+                    <div class="col-6 d-flex justify-content-start">
+                        <p style="font-weight:bold">WATCH ON ONEFOOTBALL</p>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary">Left</button>
+                            <button type="button" class="btn btn-secondary">Middle</button>
+                            <button type="button" class="btn btn-secondary">Right</button>
+                        </div>
+                    </div>
+            </div>
+            <div class="row mt-3 pb-3" id="match_card">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" id="match">
+                        <img src="images/math_card1.avif" class="card-img-top" alt="...">
+                        <ul class="list-group list-group-flush border-0">
+                          <li class="list-group-item "><img src="images/https___images.onefootball.com_icons_teams_164_192.avif" alt=""><span class="ml-4">Palermo</span></li>
+                          <li class="list-group-item border-bottom border-dark"><img src="images/logo2_card1.avif" alt=""><span class="ml-4">Calcio Padova</span></li>
+                          <li class="list-group-item ">
+                              <div class="row ">
+                                <span class="col-6 d-flex justify-content-start">13/06/2022</span>
+                                <span class="col-6 d-flex justify-content-end">02:15</span>
+                              </div>
+                            </li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-sm-none d-md-block d-lg-block">
+                    <div class="card" id="match">
+                        <img src="images/match2.avif" class="card-img-top" alt="...">
+                        <ul class="list-group list-group-flush border-0">
+                          <li class="list-group-item "><img src="images/https___images.onefootball.com_icons_teams_164_192.avif" alt=""><span class="ml-4">Palermo</span></li>
+                          <li class="list-group-item border-bottom border-dark"><img src="images/logo2_card1.avif" alt=""><span class="ml-4">Calcio Padova</span></li>
+                          <li class="list-group-item">
+                              <div class="row">
+                                <span class="col-6 d-flex justify-content-start">13/06/2022</span>
+                                <span class="col-6 d-flex justify-content-end">02:15</span>
+                              </div>
+                            </li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-lg-4 d-md-none d-sm-none d-lg-block">
+                    <div class="card" id="match">
+                        <img src="images/match3.avif" class="card-img-top" alt="...">
+                        <ul class="list-group list-group-flush border-0">
+                          <li class="list-group-item"><img src="images/https___images.onefootball.com_icons_teams_164_192.avif" alt=""><span class="ml-4">Palermo</span></li>
+                          <li class="list-group-item border-bottom border-dark"><img src="images/logo2_card1.avif" alt=""><span class="ml-4">Calcio Padova</span></li>
+                          <li class="list-group-item">
+                              <div class="row">
+                                <span class="col-6 d-flex justify-content-start">13/06/2022</span>
+                                <span class="col-6 d-flex justify-content-end">02:15</span>
+                              </div>
+                            </li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="videos">
+      <div class="row mt-4">
+        <div class="col-12" id="videos_title">
+            <h4>Match Highlights</h4>
+            <p>Relive the best moments</p>
+        </div>
+    </div>
+      <div class="row mt-3">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card" id="video_card" style="background-color: #000000;">
+                <a href="video.html"><img src="images/video1.avif" id="v" class="card-img-top" alt="home"></a>
+                <i class="fa-solid fa-play fa-3x" id="play_icon"></i>
+                <div class="card-body pr-0 pl-0">
+                  <p class="card-text">Liga Argentina: Central Córdoba 1-0 Boca Juniors</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card" id="video_card" style="background-color: #000000;">
+              <a href="video.html"><img src="images/video2.avif" id="v" class="card-img-top" alt="..."></a>
+                <i class="fa-solid fa-play fa-3x" id="play_icon"></i>
+                <div class="card-body pr-0 pl-0">
+                  <p class="card-text">Liga Argentina: Vélez Sarsfield 0-1 Platense</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3 col-md-4 d-md-block d-lg-block d-sm-none">
+            <div class="card" id="video_card" style="background-color: #000000;">
+              <a href="video.html"><img src="images/video3.avif" id="v" class="card-img-top" alt="..."></a>
+                <i class="fa-solid fa-play fa-3x" id="play_icon"></i>
+                <div class="card-body pr-0 pl-0">
+                  <p class="card-text">Liga Argentina: Godoy Cruz 2-0 Racing</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3 d-lg-block d-md-none d-sm-none">
+            <div class="card" id="video_card" style="background-color: #000000;">
+              <a href="video.html"><img src="images/video4.avif" id="v" class="card-img-top" alt="..."></a>
+                <i class="fa-solid fa-play fa-3x" id="play_icon"></i>
+                <div class="card-body pr-0 pl-0">
+                  <p class="card-text">Liga Argentina: Colón 2-2 Unión</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid pb-5 border-top border-dark">
+      <div class="container" id="teams">
+        <div class="row mt-4">
+          <div class="col-12" id="teams_title">
+              <h4> Most followed teams in your country </h4>
+          </div>
+      </div>
+        <div class="row mt-3">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card p-3" id="team_card" style="background-color: #2b2b2b;">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-4">
+                      <img src="images/tot_logo.avif" style="width:100% ;">
+                    </div>
+                    <div class="col-8">
+                      <span>TEAM</span>
+                      <span>Tottenham</span>
+                    </div>
+                  </div>
+                </div>
+                </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card p-3" id="team_card" style="background-color: #2b2b2b;">
+              <div class="container">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="images/bayern_logo.avif" style="width:100% ;">
+                  </div>
+                  <div class="col-8">
+                    <span>TEAM</span>
+                    <span>Bayern Munich</span>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-4 d-md-block d-lg-block d-sm-none">
+            <div class="card p-3" id="team_card" style="background-color: #2b2b2b;">
+              <div class="container">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="images/vn_logo.avif" style="width:100% ;">
+                  </div>
+                  <div class="col-8">
+                    <span>TEAM</span>
+                    <span>VietNam</span>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="col-lg-3 d-lg-block d-md-none d-sm-none">
+            <div class="card p-3" id="team_card" style="background-color: #2b2b2b;">
+              <div class="container">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="images/eng_logo.avif" style="width:100% ;">
+                  </div>
+                  <div class="col-8">
+                    <span>TEAM</span>
+                    <span>England</span>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="col-3" id="team5">
+            <div class="card p-3" id="team_card" style="background-color: #2b2b2b;">
+              <div class="container">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="images/eng_logo.avif" style="width:100% ;">
+                  </div>
+                  <div class="col-8">
+                    <span>TEAM</span>
+                    <span>England</span>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="col-3" id="team6">
+            <div class="card p-3" id="team_card" style="background-color: #2b2b2b;">
+              <div class="container">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="images/eng_logo.avif" style="width:100% ;">
+                  </div>
+                  <div class="col-8">
+                    <span>TEAM</span>
+                    <span>England</span>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid" id="footer">
+        <div class="container">
+            <div class="row pt-4">
+                <div class="col-2"><span>QUICK LINKS</span></div>
+                <div class="col-2"><span>ABOUT</span></div>
+                <div class="col-2"><span>LEGAL</span></div>
+                <div class="col-3"><span>DOWNLOAD</span></div>
+                <div class="col-3"><span>FOLLOW US</span></div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-2"><a href="#">All competitions</a></div>
+                <div class="col-2"><a href="">Company</a></div>
+                <div class="col-2"><a href="">Imprint</a></div>
+                <div class="col-3">
+                    <img src="https://image-service.onefootball.com/transform?w=81&h=27&dpr=2&image=https%253A%252F%252Fimages.onefootball.com%252Fcw%252Ficons%252Fapp-store.svg" alt="">
+                    <img src="https://image-service.onefootball.com/transform?w=87&h=26&dpr=2&image=https%253A%252F%252Fimages.onefootball.com%252Fcw%252Ficons%252Fgoogle-play.png" alt="">
+                </div>
+                <div class="col-3">
+                    <div>
+                        <span style="padding: 0.5em;"><i class="fa-brands fa-facebook fa-2x"></i></span>
+                        <span style="padding: 0.5em;"><i class="fa-brands fa-twitter fa-2x"></i></span>
+                        <span style="padding: 0.5em;"><i class="fa-brands fa-youtube fa-2x"></i></span>
+                        <span style="padding: 0.5em;"><i class="fa-brands fa-instagram fa-2x"></i></span>
+                      </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-2"><a href="">All teams</a></div>
+                <div class="col-2"><a href="">Careers</a></div>
+                <div class="col-2"><a href="">Privacy Policy</a></div>
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-2"></div>
+                <div class="col-2"><a href="">Contact</a></div>
+                <div class="col-2"><a href="">Terms and Conditions</a></div>
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-2"></div>
+                <div class="col-2"><a href="">Help Center</a></div>
+                <div class="col-2"><a href="">Licenses</a></div>
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-2"></div>
+                <div class="col-2"></div>
+                <div class="col-2"><a href="">Privacy Settings</a></div>
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
